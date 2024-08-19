@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+   
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+    background-size: cover;
+    background-position: center;
+
+}
+
+header {
+    position: fixed;
+    background-color: #9e7817;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+
+.logo {
+    padding-right:400px ;
+    font: size 3em;
+    color: white;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .6s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnlogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font: size 1.3em;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 50px;
+    transition: .3s;
+}
+
+.navigation .btnlogin:hover {
+    background: #fff;
+    color: black;
+}
+.img{
+    background: url(img2.jpg)no-repeat;
+    width: 100%;
+    height: 80vh;
+    background-size:cover ;
+}
+.img .overlay{
+    background: #171819;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.context{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.context h1{
+    color: #fff;
+    font-size: 3rem;
+    
+}
+.context p{
+    color: #7f8c8d;
+    font-size: 1.3rem;
+     margin-bottom:1.4rem ;
+}
+.container{
+    color: #171819;
+    font-size: 1.5rem;
+    padding-top: 2px;
+    width: 100%;
+}
+.container  h2{
+    color: #171819;
+    font-size: 2rem; 
+    padding-left:30px ;
+}
+.vscroll .wrappar{
+    max-height: 220px;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x: scroll;
+  /*  border-radius: 20px;*/
+    background-color:transparent;
+    padding: 2px;
+}
+.vscroll .wrappar::-webkit-scrollbar{
+    width: 0;
+}
+.vscroll .wrappar .item{
+    align-items:fixed;
+    min-width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    background-color: #ddd;
+    margin-left: 30px;
+    padding: 0px;
+    border-radius: 20px;
+}
+
+.container2{
+    width:100%;
+     max-height: 100%;
+     min-height: 600px;
+    background-color: rgb(240,239 ,243);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+ .base{
+   width: 1300px; 
+   height: 100%;
+   background:#fff;
+   border-radius: 15px;
+   box-shadow:4px 4px 30px rgba(0,0,0,0.06);
+   overflow-y: scroll; 
+}
+ .base::-webkit-scrollbar{
+    display: none;
+}
+.container2 form{
+    padding: 40px 0px;
+    width: 540px;
+}
+
+.container2 form .add{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #171819;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    background: #fff;
+    
+}
+ .container2 form .add input{
+    border:none;
+    outline: none;
+    box-shadow: none;
+    font-size: 16px;
+    width: 100%;
+    font-weight: 600;
+    padding:40px 20px;
+    background: none;
+}
+.container2 form .add i{
+    padding:40px 10px;
+    font-size: 20px;
+}
+.product-list{
+    padding: 40px 20px;     
+}
+.product-list .product{
+    left: 0;
+
+}
+.product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 200px;
+    border-bottom:1px solid #171819;
+}
+
+
+.product img{
+   width:100px;
+   height: 100px;
+   object-fit: cover;
+   border-radius: 40px;  
+}
+.product .p-details {
+   padding-left: 15px;
+
+}
+
+.product .p-details h2{
+    font-size: 20px;
+    color: #1d1d1d;
+
+}
+.product .p-details h3{
+    font-size: 13px; 
+}
